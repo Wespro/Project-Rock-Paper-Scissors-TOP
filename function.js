@@ -1,5 +1,6 @@
 //  Create getComputerChoice function
 //That will randomly return either Rock, Paper or Scissors.
+
 function getComputerChoice() {
   let num = Math.floor(Math.random() * 3 + 1);
   if (num === 1) {
@@ -12,32 +13,21 @@ function getComputerChoice() {
 }
 
 //function that plays a single round of Rock Paper Scissors.
+
 function PlayRound(computerSelection) {
   let input = prompt("Pick a rock or paper or sissores");
   if (input.toLowerCase() === computerSelection) {
     console.log("it's a tie");
-  } else if (input.toLowerCase() === "rock" && computerSelection === "paper") {
-    console.log("you lose you picked " + input.toLowerCase());
-  } else if (input.toLowerCase() === "paper" && computerSelection === "rock") {
-    console.log("you win you picked " + input.toLowerCase());
   } else if (
-    input.toLowerCase() === "paper" &&
-    computerSelection === "sissores"
+    (input.toLowerCase() === "rock" && computerSelection === "paper") ||
+    (input.toLowerCase() === "paper" && computerSelection === "sissores") ||
+    (input.toLowerCase() === "sissores" && computerSelection === "rock")
   ) {
     console.log("you lose you picked " + input.toLowerCase());
   } else if (
-    input.toLowerCase() === "sissores" &&
-    computerSelection === "paper"
-  ) {
-    console.log("you win you picked " + input.toLowerCase());
-  } else if (
-    input.toLowerCase() === "sissores" &&
-    computerSelection === "rock"
-  ) {
-    console.log("you lose you picked " + input.toLowerCase());
-  } else if (
-    input.toLowerCase() === "rock" &&
-    computerSelection === "sissores"
+    (input.toLowerCase() === "paper" && computerSelection === "rock") ||
+    (input.toLowerCase() === "sissores" && computerSelection === "paper") ||
+    (input.toLowerCase() === "rock" && computerSelection === "sissores")
   ) {
     console.log("you win you picked " + input.toLowerCase());
   }
