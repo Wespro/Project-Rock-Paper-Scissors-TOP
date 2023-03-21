@@ -23,13 +23,13 @@ function PlayRound(computerSelection) {
     (input.toLowerCase() === "paper" && computerSelection === "sissores") ||
     (input.toLowerCase() === "sissores" && computerSelection === "rock")
   ) {
-    console.log("you lose you picked " + input.toLowerCase());
+    console.log("you lose computer picked " + computerSelection);
   } else if (
     (input.toLowerCase() === "paper" && computerSelection === "rock") ||
     (input.toLowerCase() === "sissores" && computerSelection === "paper") ||
     (input.toLowerCase() === "rock" && computerSelection === "sissores")
   ) {
-    console.log("you win you picked " + input.toLowerCase());
+    console.log("you win computer picked " + computerSelection);
   }
 }
 
