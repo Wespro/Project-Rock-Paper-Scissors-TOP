@@ -36,9 +36,9 @@ function PlayRound(computerSelection) {
 //function called game().
 //Call the playRound function inside of this one to play a 5 round game
 // that keeps score and reports a winner or loser at the end.
-function game() {
-  for (let i = 0; i < 5; i++) {
-    PlayRound(getComputerChoice());
-  }
-}
-game();
+// function game() {
+//   for (let i = 0; i < 5; i++) {
+//     PlayRound(getComputerChoice());
+//   }
+// }
+// game();
