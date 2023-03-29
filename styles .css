@@ -10,14 +10,14 @@ body {
   text-align: center;
 }
 h1 {
-  margin: 3rem 0 0rem;
+  margin: 6% 0 0rem;
 }
 .btns {
   display: flex;
-  gap: 18rem;
+  gap: 12%;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: 13rem 0 3rem;
 }
 .btn {
   font-size: larger;
@@ -29,4 +29,17 @@ h1 {
 .btn:hover {
   background-color: rgb(255, 153, 0);
   cursor: pointer;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.score {
+  padding: 0% 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.count {
+  margin-top: 1rem;
 }
