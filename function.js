@@ -22,9 +22,9 @@ function getComputerChoice() {
 //Function that plays a single round of Rock Paper Scissors.
 
 //Varibles for playround
-let youResult = 1;
-let computerResult = 1;
-let tieResult = 1;
+let youResult = 0;
+let computerResult =0;
+let tieResult = 0;
 const you = document.querySelector(".youResult .count");
 const computer = document.querySelector(".computerResult .count ");
 const tie = document.querySelector(".tieResult .count");
