@@ -72,9 +72,9 @@ function PlayRound(event) {
       winner.textContent = "Game over : You win.";
       //Resets
       roundResult.textContent = "";
-      youResult = 1;
-      computerResult = 1;
-      tieResult = 1;
+      youResult = 0;
+      computerResult = 0;
+      tieResult = 0;
     } else if (
       Number(you.textContent) < Number(computer.textContent) &&
       Number(computer.textContent) >= Number(tie.textContent)
